@@ -1,137 +1,80 @@
-# Serie-T torseur  lvc c
-<h1>دروس</h1><!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Série TD : Torseurs</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #0a9396;
-    }
-    a {
-        text-decoration: none;
-        color: #0077b6;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    section {
-        background-color: white;
-        padding: 15px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-    }
-    .solutions, .exercises {
-        margin-left: 20px;
-    }
-    li {
-        margin: 5px 0;
-    }
-</style>
-</head>
-<body>
-
-<section>
-    <h2><a href="https://imadus1.github.io/cp2/#">Accueil</a></h2>
-</section>
-
-<section>
-    <h3>TD1</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h4>Solutions</h4>
-    <ul class="solutions">
-        <li>TD1 + Solution 1 to 5</li>
-    </ul>
-</section>
-
-<section>
-    <h3>TD2</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h4>Solutions</h4>
-    <ul class="solutions">
-        <li>TD2 + Solution 1 to 3</li>
-    </ul>
-</section>
-
-<section>
-    <h3>TD3 (Torsors)</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h4>Exercises</h4>
-    <ul class="exercises">
-        <li>Torsor Cases 3D</li>
-        <li>TD3 (1 to 5)</li>
-        <li>Solution 1</li>
-        <li>Solution 2</li>
-        <li>Solution 3</li>
-        <li>Solution 4</li>
-        <li>Solution 5</li>
-    </ul>
-</section>
-
-</body>
-</html>
-<ul>
-  <li><a href="lesson1.html">درس 1</a></li>
-  <li><a href="lesson2.html">درس 2</a></li>
-</ul>
-<h1>دروس</h1>
-<ul>
-  <li><a href="lesson1.html">درس 1</a></li>
-  <li><a href="lesson2.html">درس 2</a></li>
-</ul>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Cours et exercice : Torseur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Série TD n°1 - Cinématique du point matériel</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; }
-    .exercise { background-color: #f2f2f2; padding: 10px; border-left: 5px solid #3498db; margin-top: 20px; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #004080;
+    }
+    .exercice {
+      background-color: #ffffff;
+      border: 2px solid #d3d3d3;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    code, pre {
+      background-color: #f0f0f0;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    .corrige {
+      background-color: #e6f3ff;
+      border-left: 4px solid #0078d4;
+      padding: 10px 15px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Cours : Le Torseur</h1>
-  <p>
-    Un torseur est une représentation mathématique des forces et des moments appliqués à un corps rigide.  
-    Il est composé de :
-  </p>
-  <ul>
-    <li>La résultante des forces <strong>R</strong></li>
-    <li>Le moment au point choisi <strong>M<sub>O</sub></strong></li>
-  </ul>
-  <p>Le torseur est utilisé pour analyser les effets des forces sur un corps rigide.</p>
+  <h1>🧮 Série TD n°1 – Cinématique du point matériel</h1>
+  <p><strong>Objectifs du TD :</strong> Décrire le mouvement d’un point matériel dans différents systèmes de coordonnées, calculer la vitesse et l’accélération, et interpréter les composantes tangentielle et normale.</p>
 
-  <h2>Exemple de torseur</h2>
-  <p>Si une force F agit en un point A, le torseur au point O est calculé comme suit :</p>
-  <p><strong>T<sub>O</sub> = {R; M<sub>O</sub>}</strong></p>
+  <div class="exercice">
+    <h2>Exercice 1 – Mouvement rectiligne non uniforme</h2>
+    <p>Un point matériel M se déplace sur une droite selon la loi :</p>
+    <pre>x(t) = 4t² - 3t &nbsp;&nbsp;&nbsp; (en mètres, t en secondes)</pre>
+    <ol>
+      <li>Déterminer la vitesse instantanée <em>v(t)</em>.</li>
+      <li>Déterminer l’accélération <em>a(t)</em>.</li>
+      <li>Donner les valeurs de <em>v</em> et <em>a</em> à t = 2 s.</li>
+      <li>Interpréter le signe de l’accélération.</li>
+    </ol>
 
-  <div class="exercise">
-    <h2>Exercice 1</h2>
-    <p>Le point A(1,0,0) subit une force F = (2,3,0) N. Calculez le torseur au point O(0,0,0).</p>
-    <p>💡 Astuce : utilisez <strong>M<sub>O</sub> = OA × F</strong></p>
+    <div class="corrige">
+      <strong>Corrigé :</strong><br>
+      v(t) = dx/dt = 8t - 3<br>
+      a(t) = dv/dt = 8<br>
+      À t = 2 s → v = 13 m/s et a = 8 m/s².<br>
+      Accélération constante et positive ⇒ mouvement uniformément accéléré.
+    </div>
   </div>
 
-  <div class="exercise">
-    <h2>Exercice 2</h2>
-    <p>Donnez un exemple de corps rigide soumis à plusieurs forces, et calculez le torseur au point central.</p>
-  </div>
+  <div class="exercice">
+    <h2>Exercice 2 – Mouvement circulaire uniforme</h2>
+    <p>Un point M décrit un cercle de rayon R = 0,5 m avec une vitesse angulaire constante ω = 10 rad/s.</p>
+    <ol>
+      <li>Donner les expressions du vecteur position, vitesse et accélération.</li>
+      <li>Calculer les valeurs de la vitesse et de l’accélération.</li>
+    </ol>
 
-</body>
-</html>
+    <div class="corrige">
+      <strong>Corrigé :</strong><br>
+      r(t) = R(cos(ωt) i + sin(ωt) j)<br>
+      v(t) = Rω(-sin(ωt) i + cos(ωt) j)<br>
+      a(t) = -Rω²(cos(ωt) i + sin(ωt) j)<br>
+      |v| = Rω = 5 m/s &nbsp;&nbsp; |a|
+
+
+ 
