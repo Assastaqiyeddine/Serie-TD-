@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-<meta charset="UTF-8">
-<title>خريطة الطرق الوطنية في الجزائر</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-<style>
-  #map { height: 90vh; width: 100%; }
-</style>
-</head>
-<body>
-<h2 style="text-align:center;">خريطة الطرق الوطنية في الجزائر</h2>
-<div id="map"></div>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-  // إنشاء الخريطة
-  var map = L.map('map').setView([28, 3], 5);
-
-  // إضافة خريطة أساسية
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19
-  }).addTo(map);
-
-  // مثال لولاية الجزائر
-  var alger = L.polygon([[36.7,3.0],[36.7,3.5],[36.4,3.5],[36.4,3.0]], {
-    color: 'blue',
-    fillColor: 'lightblue',
-    fillOpacity: 0.5
-  }).addTo(map);
-
-  alger.bindPopup("<b>ولاية الجزائر</b><br>الطرق الوطنية: 2");
-
-  // مثال طريق وطني
-  var route1 = L.polyline([[36.5,3.1],[36.6,3.4]], {color:'green'}).addTo(map);
-  route1.bindPopup("<b>طريق وطني 1</b><br>الحالة: جاهز<br>Km: 10-50<br>الميزانية: 500,000,000 دج");
-</script>
-</body>
-</html>
+body { font-family: Arial, sans-serif; direction: rtl; background: #f5f5f5; }
+header { background: #004080; color: white; padding: 20px; text-align: center; }
+nav ul { list-style: none; display: flex; justify-content: center; padding: 0; }
+nav li { margin: 0 10px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+main { padding: 20px; }
+footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: gray; }
